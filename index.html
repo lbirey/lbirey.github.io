@@ -14,6 +14,7 @@
     <link href="./assets/css/APlayer.min.css" rel="stylesheet" type="text/css">
     <link href="./assets/css/highlight.github.min.css" rel="stylesheet" type="text/css">
     <link href="./assets/css/custom.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="./assets/css/friendlink.css">
     <title>Memos diary</title>
     <style type='text/css'>
     header {
@@ -346,7 +347,18 @@
     </section>
     <div id='rebtmbtn' onclick='returnBottom()'>👇</div>
     <div id='retopbtn' onclick='returnTop()'>👆</div>
-   
+      <div id="artalk" style="margin-top: 20px;"></div>
+    <script src="https://cdn.jsdelivr.net/gh/ArtalkJS/artalk@latest/dist/artalk.js"></script>
+    <script>
+        new Artalk({
+            el: '#artalk',
+            server: 'https://dayu.ddns.net',
+            theme: 'light',
+            title: 'Artalk 评论',
+            avatar: './img/avatar.jpg' // 替换为你的头像 URL
+        });
+    </script>
+
     <script type="text/javascript">
         const backgrounds = [
             './assets/img/bg1.gif',
