@@ -1,13 +1,1 @@
-body {
-    background-image: url('https://img.paulzzh.com/touhou/random'); /* 背景图像 */
-    background-size: cover; /* 背景图像覆盖整个页面，保持覆盖，可能会裁剪 */
-    background-position: center; /* 背景图像居中 */
-    background-attachment: fixed; /* 背景固定，不随页面滚动而移动 */
-    display: flex; /* 使用 flexbox 布局 */
-    flex-direction: column; /* 垂直方向布局 */
-    justify-content: center; /* 垂直居中内容 */
-    align-items: center; /* 水平居中内容 */
-    position: relative; /* 相对定位 */
-    height: 100vh; /* 确保 body 高度占满视口 */
-    margin: 0; /* 去除默认 margin */
-}
+
