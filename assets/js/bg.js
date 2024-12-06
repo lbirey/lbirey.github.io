@@ -1,10 +1,10 @@
 function getRandomBackgroundImage() {
     const images = [
-        '../img/bei.jpg',
-        '../img/bei1.jpg',
-        '../img/bei2.jpg',
-       '../img/bei3.jpg',
-       '../img/bei4.jpg',
+        '/assets/img/bei.jpg',
+        '/assets/img/bei1.jpg',
+        '/assets/img/bei2.jpg',
+       '/assets/img/bei3.jpg',
+       '/assets/img/bei4.jpg',
     ];
     const randomIndex = Math.floor(Math.random() * images.length);
     return images[randomIndex];
