@@ -14,7 +14,7 @@ body.light-theme,
     --color-border-muted: #d8dee4;
     --color-post-preview: #fff;
     --color-memos-pre-bg: #f3f4f6;;
-
+    
     /* variables for js, must be the same as these in @custom-media queries */
     --phoneWidth: (max-width: 684px);
     --tabletWidth: (max-width: 900px);
@@ -86,6 +86,25 @@ body {
     padding: 45px;
 }
 
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+    width: 4px; /* 滚动条宽度 */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* 滚动条轨道背景 */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(33, 59, 84, 0.5); /* 滚动条颜色（透明黑色） */
+    border-radius: 4px; /* 滚动条圆角 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(42, 89, 165, 0.7); /* 鼠标悬停时的颜色 */
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -134,7 +153,7 @@ blockquote {
 }
 
 #main {
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .theme-toggle {
@@ -178,7 +197,7 @@ blockquote {
 .memos__content:before {
     content: '';
     position: absolute;
-    background: var(--avatar-url) no-repeat;
+    background: url('../img/avatar.png') no-repeat;
     background-size: contain;
     width: 40px;
     height: 40px;
@@ -595,7 +614,7 @@ blockquote {
 }
 
 footer {
-    padding: 40px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -606,3 +625,9 @@ footer {
 .filter{
 	display:none;
 }
+/*鼠标小黑猫光标*/
+button {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),alias}
+p {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur),auto}
+a {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur),auto}
+a:active {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/work.cur),alias}
+body {cursor:url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/normal.cur),auto}
