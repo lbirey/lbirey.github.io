@@ -255,13 +255,16 @@
     <div id='retopbtn' onclick='returnTop()'>👆</div>
       <div id="artalk" style="margin-top: 20px;"></div>
     <script src="https://dayu.ddns.net/dist/Artalk.js"></script>
-    <script>
-        new Artalk({
+<div id="artalk"></div>
+<script>
+  Artalk.init({
             el: '#artalk',
             server: 'https://dayu.ddns.net',
             theme: 'light',
             title: 'Artalk 评论',
             avatar: './img/avatar.jpg' // 替换为你的头像 URL
+            site:      'wom',                    // 你的站点名
+             pageTitle: '评论',         // 页面标题 (留空自动获取)
         });
     </script>
 
